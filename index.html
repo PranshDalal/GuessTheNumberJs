@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number Game</title>
+</head>
+<body>
+    <div class="menu">
+        <button onclick="startSinglePlayer()">1 Player</button>
+        <button onclick="startTwoPlayer()">2 Player</button>
+    </div>
+    <div class="game">
+        <h2 id="question"></h2>
+        <input type="text" id="guess">
+        <button onclick="checkGuess()">Guess</button>
+        <p id="message"></p>
+        <p id="timer">Time Left: 20 seconds</p>
+        <p id="attempts">Attempts Left: 10</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
